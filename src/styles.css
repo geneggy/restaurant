@@ -1,0 +1,12 @@
+.header-list {
+  border: 1px solid red;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header-list-item {
+  padding: 10px;
+}
