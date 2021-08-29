@@ -11,10 +11,19 @@
   padding: 10px;
 }
 
+#content {
+  margin-bottom: 50px;
+}
+
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   border: 1px solid red;
+}
+
+.menu-list {
+  border: 1px solid red;
+  list-style: none;
 }

@@ -12,8 +12,6 @@ const header = (headerItems) => {
     listItemEl.classList.add("header-list-item");
     listItemEl.classList.add(`list-item-${item.name}`);
     listItemEl.addEventListener("click", () => {
-      console.log(changeContent);
-      console.log(item.func);
       changeContent(item.func);
     });
     headerListEl.appendChild(listItemEl);
