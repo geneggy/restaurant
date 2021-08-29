@@ -1,23 +1,27 @@
-const header = (listItems) => {
-  const bodyEl = document.querySelector("body");
+import { changeContent } from "./initialize.js";
+
+const header = (headerItems) => {
   const headerEl = document.createElement("header");
   const headerListEl = document.createElement("ul");
   headerEl.classList.add("header");
   headerListEl.classList.add("header-list");
 
-  listItems.forEach((item) => {
+  headerItems.forEach((item) => {
     const listItemEl = document.createElement("li");
-    listItemEl.textContent = item;
+    listItemEl.textContent = `${item.name}`;
     listItemEl.classList.add("header-list-item");
-    listItemEl.classList.add(`list-item-${item}`);
+    listItemEl.classList.add(`list-item-${item.name}`);
     listItemEl.addEventListener("click", () => {
-      console.log(`${item} clicked`);
+      console.log(changeContent);
+      console.log(item.func);
+      changeContent(item.func);
     });
     headerListEl.appendChild(listItemEl);
   });
 
   headerEl.appendChild(headerListEl);
-  bodyEl.insertBefore(headerEl, bodyEl.firstChild);
+
+  return headerEl;
 };
 
 export default header;

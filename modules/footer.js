@@ -1,5 +1,4 @@
 const footer = () => {
-  console.log("footer running");
   const bodyEl = document.querySelector("body");
 
   const footerEl = document.createElement("footer");
@@ -7,7 +6,7 @@ const footer = () => {
   copyrightEl.textContent = "© 2021 Eugene Gian";
 
   footerEl.appendChild(copyrightEl);
-  bodyEl.appendChild(footerEl);
+  return footerEl;
 };
 
 export default footer;

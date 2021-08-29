@@ -1,6 +1,5 @@
 const home = () => {
   console.log("home runs");
-  const contentEl = document.getElementById("content");
   const homeEl = document.createElement("section");
   const titleEl = document.createElement("h1");
   const descriptionEl = document.createElement("div");
@@ -14,7 +13,8 @@ const home = () => {
 
   homeEl.appendChild(titleEl);
   homeEl.appendChild(descriptionEl);
-  contentEl.appendChild(homeEl);
+
+  return homeEl;
 };
 
 export default home;
