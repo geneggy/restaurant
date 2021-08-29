@@ -23,6 +23,10 @@ footer {
   border: 1px solid red;
 }
 
+body {
+  margin: 0;
+}
+
 .menu-list {
   border: 1px solid red;
   list-style: none;
